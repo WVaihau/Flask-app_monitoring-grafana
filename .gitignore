@@ -16,6 +16,8 @@ png/
 queries.active
 wal/
 chunks_head/
+0*/
+lock
 
 # C extensions
 *.so

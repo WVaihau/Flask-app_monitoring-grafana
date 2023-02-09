@@ -35,6 +35,11 @@ Note : Add /metrics to the path above to access the metrics for flask app, prome
   - Default user login informations : (it will ask to change the password at the first connection)
     - login : admin
     - password : admin
+  - Import the dashboard in grafana
+    - From the left menu navigate to dashboard -> + Import
+    - Click "Upload JSON file"
+    - In the pop-up explorer select **grafana_dashboard.json**
+      - Note : If the dashboard was already added it might generate an error. Force the import to overwrite
   - Add a data source :
     - Login with the grafana path (see above)
     - From the left menu navigate to Configuration/Data Source -> Add data source
