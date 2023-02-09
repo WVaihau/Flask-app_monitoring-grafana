@@ -3,6 +3,20 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Grafana
+*.tmpl
+*.db
+alerting/
+csv/
+file-collections/
+plugins/
+png/
+
+# Prometheus
+queries.active
+wal/
+chunks_head/
+
 # C extensions
 *.so
 
