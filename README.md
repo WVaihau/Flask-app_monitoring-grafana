@@ -32,16 +32,15 @@ docker-compose up
 Note : Add /metrics to the path above to access the metrics for flask app, prometheus and node exporter
 
 - Grafana
-  - Default user login informations :
+  - Default user login informations : (it will ask to change the password at the first connection)
     - login : admin
     - password : admin
-Note : It will ask you to change the password at the first connection
   - Add a data source :
     - Login with the grafana path (see above)
-    - From the left menu navigate to Data Source -> Add data source
+    - From the left menu navigate to Configuration/Data Source -> Add data source
     - Select Prometheus from the list
     - Enter <http://prometheus:9090> as the URL
     - Click Save & Test
   - Create a dashboard
-    - From the left menu navigate to dashboard -> New
+    - From the left menu navigate to dashboard -> + New Dashboard
     - Add a graph and select Prometheus data source
